@@ -44,7 +44,7 @@ button.addEventListener('click', async function() {
         
         localStorage.setItem('username', username);
 
-        window.location.href = "../digitalplanner/index.html";
+        window.location.href = "..";
 
     } catch (error) {
         console.error("Error signing in:", error.message);
