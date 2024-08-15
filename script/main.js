@@ -17,11 +17,10 @@ const database = getFirestore(app);
 const auth = getAuth(app);
 
 const username = localStorage.getItem('username');
-console.log(username)
 
 auth.onAuthStateChanged((user) => {
     if (!user) {
-        window.location.href = '../auth/login.html';
+        window.location.href = '../digitalplanner/auth/login.html';
     }
 });
 
