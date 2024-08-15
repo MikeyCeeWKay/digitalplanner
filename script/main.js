@@ -91,7 +91,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 document.getElementById('logout').addEventListener('click', () => {
     signOut(auth).then(() => {
-        window.location.href = '../auth/login.html';
+        window.location.href = '../digitalplanner/auth/login.html';
     }).catch((error) => {
         console.error('Logout error:', error);
     });
