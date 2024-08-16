@@ -45,7 +45,7 @@ button.addEventListener('click', async function() {
             if (user) {
                 console.log('User is authenticated:', user.uid);
                 localStorage.setItem('username', username);
-                window.location.href = "../../index.html";
+                window.location.href = "../index.html";
             } else {
                 console.error("No authenticated user found");
             }
