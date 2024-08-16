@@ -44,7 +44,7 @@ button.addEventListener('click', async function() {
         });
 
         console.log("User signed up successfully:", username);
-        window.location.href = "../../auth/login.html";
+        window.location.href = "../auth/login.html";
 
     } catch (error) {
         console.error("Error signing up:", error.message);
