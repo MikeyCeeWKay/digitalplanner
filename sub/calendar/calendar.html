@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digital Planner Dashboard</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Digital Planner</h1>
+        </header>
+        <div class="container">
+            <aside>
+                <ul>
+                    <li><a href="../../index.html">Home</a></li>
+                    <li><a href="../task/task.html">Tasks</a></li>
+                    <li><a href="#notes">Notes</a></li>
+                </ul>
+            </aside>
+            <main>
+                <section id="calendar">
+                    <h2>Calendar</h2>
+                    <div id="month-display">
+                        <span id="current-month">August 2024</span>
+                    </div>
+                    <div id="weekdays">
+                        <span>Sun</span>
+                        <span>Mon</span>
+                        <span>Tue</span>
+                        <span>Wed</span>
+                        <span>Thu</span>
+                        <span>Fri</span>
+                        <span>Sat</span>
+                    </div>
+                    <div id="calendar-grid">
+                    </div>
+                    <div id="event-modal" class="hidden">
+                        <button id="cancel-event" class="close-button">&times;</button>
+                        <h3 id="selected-date"></h3>
+                        <input type="text" id="event-input" placeholder="Event Name">
+                        <button id="save-event">Save Event</button>
+                    </div>
+                </section>
+            </main>
+        </div>
+        <script type="module" src="../../script/calendar.js"></script>
+    </body>
+</html>

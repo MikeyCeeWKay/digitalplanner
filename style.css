@@ -1,0 +1,166 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body {
+    font-family: 'Fredoka', sans-serif;
+    background: url(../images/wallpaper.png) no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #fff;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin: 0;
+    font-size: 40px;
+    font-weight: 800;
+    color: #222;
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.container {
+    display: flex;
+    min-height: 80vh;
+    margin: 20px;
+}
+
+aside {
+    width: 20%;
+    background: transparent;
+    padding: 20px;
+    backdrop-filter: blur(15px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .3);
+    border-radius: 40px;
+}
+
+aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+aside ul li {
+    margin: 15px 0;
+    width: 80%;
+}
+
+aside ul li a {
+    text-decoration: none;
+    color: #fff;
+    display: block;
+    font-weight: 400;
+    text-align: center;
+    font-size: 20px;
+}
+
+main {
+    width: 80%;
+    padding: 20px;
+}
+
+section {
+    background: transparent;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(80px);
+    border-radius: 20px;
+    color: #fff;
+    font-size: 20px;
+}
+
+.event-item {
+    background: #fff;
+    padding: 10px;
+    margin: 5px 0;  
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 600;
+}
+
+.delete-event-button {
+    background-color: #fa3232;
+    border: none;
+    color: white;
+    font-size: 16px;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 7px;
+    margin-right: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.delete-event-button:hover {
+    background-color: #e60000;
+}
+
+.task-item {
+    background: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    color: #333;
+    font-weight: 600;
+}
+
+.delete-task-button {
+    background-color: #f44336;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.delete-task-button:hover {
+    background-color: #d32f2f;
+}
+
+.task-header {
+    display: block;
+    font-weight: bold;
+    margin-right: 25px;
+}
+
+.task-description {
+    display: block;
+    margin-left: 25px;
+    font-size: 0.9em;
+    color: #666;
+}
+
+.task-item {
+    margin-bottom: 10px;
+}
+
+.task-item button {
+    margin-top: 5px;
+    padding: 5px 10px;
+    background-color: #28a745;
+    border-radius: 5px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+.task-item button:hover {
+    background-color: #218838;
+}

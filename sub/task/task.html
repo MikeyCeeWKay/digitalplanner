@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Digital Planner</h1>
+    </header>
+    <div class="container">
+        <aside>
+            <ul>
+                <li><a href="../../index.html">Home</a></li>
+                <li><a href="../calendar/calendar.html">Calendar</a></li>
+                <li><a href="#notes">Notes</a></li>
+            </ul>
+        </aside>
+        <main>
+            <section id="create-task">
+                <h2>Create Task</h2>
+                <form id="create-task-form">
+                    <label for="task-name">Task Name:</label>
+                    <input type="text" id="task-name" placeholder="Enter task name" required>
+                    
+                    <label for="task-description">Task Description:</label>
+                    <textarea id="task-description" placeholder="Enter task description" required></textarea>
+                    
+                    <label for="task-deadline">Deadline:</label>
+                    <input type="date" id="task-deadline">
+                    
+                    <button type="submit" id="save-task">Save Task</button>
+                </form>
+            </section>
+        </main>
+    </div>
+    <script type="module" src="../../script/task.js"></script>
+</body>
+</html>

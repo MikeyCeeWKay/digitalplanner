@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Digital Planner Dashboard</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <header>
+            <h1>Digital Planner</h1>
+        </header>
+        <div class="container">
+            <aside>
+                <ul>
+                    <li><a href="sub/calendar/calendar.html">Calendar</a></li>
+                    <li><a href="sub/task/task.html">Tasks</a></li>
+                    <li><a href="#notes">Notes</a></li>
+                    <li><a href="" id="logout">Logout</a></li>
+                </ul>
+            </aside>
+            <main>
+                <section id="calendar">
+                    <h2>Calendar</h2>
+                    <div id="events-list"></div>
+                </section>
+                <section id="tasks">
+                    <h2>Tasks</h2>
+                    <div id="tasks-list"></div>
+                </section>
+                <section id="notes">
+                    <h2>Notes</h2>
+                </section>
+            </main>
+        </div>
+        <script type="module" src="script/main.js"></script>
+    </body>
+</html>
