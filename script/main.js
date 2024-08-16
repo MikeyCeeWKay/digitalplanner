@@ -23,7 +23,7 @@ auth.onAuthStateChanged((user) => {
         console.log('User is authenticated:', user.uid);
     } else {
         console.log('No authenticated user found. Redirecting to login.');
-        window.location.href = '../auth/login.html';
+        window.location.href = '../digitalplanner/auth/login.html';
     }
 });
 
