@@ -65,13 +65,15 @@ async function displayEventsForUser(username) {
             eventItem.textContent = `${eventDateString} - ${eventData.name}`;
 
             const deleteButton = document.createElement('button');
-            deleteButton.textContent = '✘';
+            const deleteIcon = document.createElement('i');
             deleteButton.className = 'delete-event-button';
+            deleteIcon.className = 'bx bxs-x-circle';
             deleteButton.addEventListener('click', async () => {
                 await deleteEvent(doc.id);
             });
-
+            
             eventItem.appendChild(deleteButton);
+            deleteButton.appendChild(deleteIcon)
             eventsContainer.appendChild(eventItem);
         });
     } catch (error) {
@@ -113,12 +115,15 @@ async function displayTasksForUser(username) {
             `;
 
             const completeButton = document.createElement('button');
-            completeButton.textContent = '✔';
+            const completeIcon = document.createElement('i');
+            completeButton.className = 'complete-task-button'
+            completeIcon.className = 'bx bxs-check-circle';
             completeButton.addEventListener('click', async () => {
                 await markTaskAsCompleted(task.id);
             });
 
             taskItem.appendChild(completeButton);
+            completeButton.appendChild(completeIcon);
             tasksContainer.appendChild(taskItem);
         };
 
