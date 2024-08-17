@@ -92,19 +92,18 @@ section {
 }
 
 .delete-event-button {
-    background-color: #fa3232;
+    background: none;
     border: none;
-    color: white;
-    font-size: 16px;
-    padding: 5px 10px;
     cursor: pointer;
-    border-radius: 7px;
-    margin-right: 5px;
-    transition: background-color 0.3s ease;
 }
 
-.delete-event-button:hover {
-    background-color: #e60000;
+.delete-event-button i {
+    font-size: 30px;
+    color: #f00
+}
+
+.delete-event-button i:hover {
+    color: #d00;
 }
 
 .task-item {
@@ -151,16 +150,17 @@ section {
     margin-bottom: 10px;
 }
 
-.task-item button {
-    margin-top: 5px;
-    padding: 5px 10px;
-    background-color: #28a745;
-    border-radius: 5px;
-    color: #fff;
+.complete-task-button {
+    background: none;
     border: none;
     cursor: pointer;
 }
 
-.task-item button:hover {
-    background-color: #218838;
+.complete-task-button i {
+    font-size: 30px;
+    color: #0c0;
+}
+
+.complete-task-button i:hover {
+    color: #0b0;
 }
